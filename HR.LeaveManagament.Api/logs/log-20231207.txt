@@ -1,0 +1,242 @@
+2023-12-07 08:52:38.309 -03:00 [INF] Now listening on: https://localhost:7228
+2023-12-07 08:52:38.380 -03:00 [INF] Now listening on: http://localhost:5093
+2023-12-07 08:52:38.384 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-07 08:52:38.386 -03:00 [INF] Hosting environment: Development
+2023-12-07 08:52:38.388 -03:00 [INF] Content root path: C:\Users\facundo.vega\source\repos\Windows Form Applicatio\HR.LeaveManagement.Clean\HR.LeaveManagament.Api
+2023-12-07 08:53:24.516 -03:00 [INF] Now listening on: https://localhost:7228
+2023-12-07 08:53:24.562 -03:00 [INF] Now listening on: http://localhost:5093
+2023-12-07 08:53:24.572 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-07 08:53:24.574 -03:00 [INF] Hosting environment: Development
+2023-12-07 08:53:24.575 -03:00 [INF] Content root path: C:\Users\facundo.vega\source\repos\Windows Form Applicatio\HR.LeaveManagement.Clean\HR.LeaveManagament.Api
+2023-12-07 08:54:08.971 -03:00 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 3.7434 ms
+2023-12-07 08:54:12.854 -03:00 [INF] HTTP POST /api/Auth/login responded 200 in 3871.1772 ms
+2023-12-07 08:54:14.513 -03:00 [INF] HTTP OPTIONS /api/LeaveTypes responded 204 in 0.7832 ms
+2023-12-07 08:54:15.055 -03:00 [INF] Leave types were retrieved sucessfully
+2023-12-07 08:54:15.068 -03:00 [INF] HTTP GET /api/LeaveTypes responded 200 in 539.8369 ms
+2023-12-07 08:54:16.107 -03:00 [INF] HTTP OPTIONS /api/LeaveRequest responded 204 in 0.1907 ms
+2023-12-07 08:54:16.350 -03:00 [INF] HTTP GET /api/LeaveRequest responded 200 in 235.8522 ms
+2023-12-07 08:54:34.669 -03:00 [INF] HTTP OPTIONS /api/LeaveTypes responded 204 in 0.0844 ms
+2023-12-07 08:54:34.688 -03:00 [INF] Leave types were retrieved sucessfully
+2023-12-07 08:54:34.689 -03:00 [INF] HTTP GET /api/LeaveTypes responded 200 in 7.9357 ms
+2023-12-07 08:54:43.224 -03:00 [INF] HTTP OPTIONS /api/LeaveTypes/1 responded 204 in 0.0615 ms
+2023-12-07 08:54:43.267 -03:00 [INF] HTTP GET /api/LeaveTypes/1 responded 200 in 35.1663 ms
+2023-12-07 08:54:46.060 -03:00 [INF] HTTP OPTIONS /api/LeaveTypes/1 responded 204 in 0.4923 ms
+2023-12-07 08:54:46.192 -03:00 [WRN] Validation errors in update request for LeaveType - 1
+2023-12-07 08:54:46.402 -03:00 [ERR] HTTP PUT /api/LeaveTypes/1 responded 500 in 336.0656 ms
+HR.LeaveManagement.Application.Exceptions.BadRequestException: Invalid leave Type
+   at HR.LeaveManagement.Application.Features.LeaveType.Commands.UpdateLeaveType.UpdateLeaveTypeCommandHandler.Handle(UpdateLeaveTypeCommand request, CancellationToken cancellationToken) in C:\Users\facundo.vega\source\repos\Windows Form Applicatio\HR.LeaveManagement.Clean\HR.LeaveManagement.Application\Features\LeaveType\Commands\UpdateLeaveType\UpdateLeaveTypeCommandHandler.cs:line 29
+   at HR.LeaveManagament.Api.Controllers.LeaveTypesController.Put(UpdateLeaveTypeCommand leaveType) in C:\Users\facundo.vega\source\repos\Windows Form Applicatio\HR.LeaveManagement.Clean\HR.LeaveManagament.Api\Controllers\LeaveTypesController.cs:line 54
+   at lambda_method336(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2023-12-07 08:54:49.361 -03:00 [INF] HTTP OPTIONS /api/LeaveTypes responded 204 in 0.2875 ms
+2023-12-07 08:54:49.375 -03:00 [INF] Leave types were retrieved sucessfully
+2023-12-07 08:54:49.381 -03:00 [INF] HTTP GET /api/LeaveTypes responded 200 in 13.2609 ms
+2023-12-07 08:54:52.828 -03:00 [INF] HTTP OPTIONS /api/LeaveRequest responded 204 in 0.1596 ms
+2023-12-07 08:54:52.852 -03:00 [INF] HTTP GET /api/LeaveRequest responded 200 in 13.3109 ms
+2023-12-07 15:53:25.870 -03:00 [INF] Now listening on: https://localhost:7228
+2023-12-07 15:53:26.082 -03:00 [INF] Now listening on: http://localhost:5093
+2023-12-07 15:53:26.120 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-07 15:53:26.130 -03:00 [INF] Hosting environment: Development
+2023-12-07 15:53:26.139 -03:00 [INF] Content root path: C:\Users\facundo.vega\source\repos\Windows Form Applicatio\HR.LeaveManagement.Clean\HR.LeaveManagament.Api
+2023-12-07 15:54:32.991 -03:00 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 4.3782 ms
+2023-12-07 15:54:37.003 -03:00 [INF] HTTP POST /api/Auth/login responded 200 in 3992.5668 ms
+2023-12-07 15:54:41.610 -03:00 [INF] HTTP OPTIONS /api/LeaveTypes responded 204 in 1.2304 ms
+2023-12-07 15:54:42.157 -03:00 [INF] Leave types were retrieved sucessfully
+2023-12-07 15:54:42.171 -03:00 [INF] HTTP GET /api/LeaveTypes responded 200 in 552.6175 ms
+2023-12-07 15:55:14.922 -03:00 [INF] HTTP OPTIONS /api/LeaveTypes responded 204 in 0.2691 ms
+2023-12-07 15:55:15.323 -03:00 [INF] HTTP POST /api/LeaveTypes responded 201 in 396.1005 ms
+2023-12-07 15:55:15.355 -03:00 [INF] Leave types were retrieved sucessfully
+2023-12-07 15:55:15.358 -03:00 [INF] HTTP GET /api/LeaveTypes responded 200 in 18.0216 ms
+2023-12-07 15:55:30.225 -03:00 [INF] HTTP OPTIONS /api/LeaveTypes responded 204 in 0.0703 ms
+2023-12-07 15:55:30.248 -03:00 [INF] HTTP POST /api/LeaveTypes responded 201 in 16.3314 ms
+2023-12-07 15:55:30.274 -03:00 [INF] Leave types were retrieved sucessfully
+2023-12-07 15:55:30.276 -03:00 [INF] HTTP GET /api/LeaveTypes responded 200 in 13.1664 ms
+2023-12-07 15:57:35.653 -03:00 [INF] Now listening on: https://localhost:7228
+2023-12-07 15:57:35.691 -03:00 [INF] Now listening on: http://localhost:5093
+2023-12-07 15:57:35.695 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-07 15:57:35.699 -03:00 [INF] Hosting environment: Development
+2023-12-07 15:57:35.700 -03:00 [INF] Content root path: C:\Users\facundo.vega\source\repos\Windows Form Applicatio\HR.LeaveManagement.Clean\HR.LeaveManagament.Api
+2023-12-07 15:59:39.031 -03:00 [INF] Now listening on: https://localhost:7228
+2023-12-07 15:59:39.118 -03:00 [INF] Now listening on: http://localhost:5093
+2023-12-07 15:59:39.123 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-07 15:59:39.125 -03:00 [INF] Hosting environment: Development
+2023-12-07 15:59:39.127 -03:00 [INF] Content root path: C:\Users\facundo.vega\source\repos\Windows Form Applicatio\HR.LeaveManagement.Clean\HR.LeaveManagament.Api
+2023-12-07 16:00:08.385 -03:00 [INF] HTTP OPTIONS /api/LeaveTypes responded 204 in 4.2139 ms
+2023-12-07 16:00:10.628 -03:00 [INF] Leave types were retrieved sucessfully
+2023-12-07 16:00:10.639 -03:00 [INF] HTTP GET /api/LeaveTypes responded 200 in 2240.4364 ms
+2023-12-07 16:00:15.436 -03:00 [INF] HTTP OPTIONS /api/LeaveTypes responded 204 in 0.7363 ms
+2023-12-07 16:00:15.905 -03:00 [ERR] HTTP POST /api/LeaveTypes responded 500 in 465.3888 ms
+HR.LeaveManagement.Application.Exceptions.BadRequestException: Invalid LeaveType
+   at HR.LeaveManagement.Application.Features.LeaveType.Commands.CreateLeaveType.CreateLeaveTypeCommandHandler.Handle(CreateLeaveTypeCommand request, CancellationToken cancellationToken) in C:\Users\facundo.vega\source\repos\Windows Form Applicatio\HR.LeaveManagement.Clean\HR.LeaveManagement.Application\Features\LeaveType\Commands\CreateLeaveType\CreateLeaveTypeCommandHandler.cs:line 27
+   at HR.LeaveManagament.Api.Controllers.LeaveTypesController.Post(CreateLeaveTypeCommand leaveType) in C:\Users\facundo.vega\source\repos\Windows Form Applicatio\HR.LeaveManagement.Clean\HR.LeaveManagament.Api\Controllers\LeaveTypesController.cs:line 44
+   at lambda_method44(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2023-12-07 16:00:16.360 -03:00 [ERR] {"Errors":{"":["Leave Type already exists"]},"Type":"BadRequestException","Title":"Invalid LeaveType","Status":400,"Detail":null,"Instance":null,"Extensions":{}}
+2023-12-07 16:00:27.247 -03:00 [INF] HTTP OPTIONS /api/LeaveTypes responded 204 in 0.2935 ms
+2023-12-07 16:00:27.448 -03:00 [INF] HTTP POST /api/LeaveTypes responded 201 in 196.3983 ms
+2023-12-07 16:00:27.484 -03:00 [INF] Leave types were retrieved sucessfully
+2023-12-07 16:00:27.489 -03:00 [INF] HTTP GET /api/LeaveTypes responded 200 in 8.8170 ms
+2023-12-07 16:00:32.423 -03:00 [INF] HTTP OPTIONS /api/LeaveTypes/{id} responded 204 in 0.0522 ms
+2023-12-07 16:00:32.449 -03:00 [INF] HTTP DELETE /api/LeaveTypes/{id} responded 400 in 21.3137 ms
+2023-12-07 16:00:34.873 -03:00 [INF] HTTP DELETE /api/LeaveTypes/{id} responded 400 in 1.0489 ms
+2023-12-07 16:00:35.774 -03:00 [INF] HTTP DELETE /api/LeaveTypes/{id} responded 400 in 1.1803 ms
+2023-12-07 16:00:38.124 -03:00 [INF] HTTP OPTIONS /api/LeaveTypes/5 responded 204 in 0.0473 ms
+2023-12-07 16:00:38.157 -03:00 [INF] HTTP GET /api/LeaveTypes/5 responded 200 in 29.6766 ms
+2023-12-07 16:01:00.162 -03:00 [INF] HTTP OPTIONS /api/LeaveRequest responded 204 in 0.0537 ms
+2023-12-07 16:01:00.699 -03:00 [INF] HTTP GET /api/LeaveRequest responded 200 in 532.1886 ms
+2023-12-07 16:01:01.500 -03:00 [INF] HTTP OPTIONS /api/LeaveTypes responded 204 in 0.0843 ms
+2023-12-07 16:01:01.528 -03:00 [INF] Leave types were retrieved sucessfully
+2023-12-07 16:01:01.532 -03:00 [INF] HTTP GET /api/LeaveTypes responded 200 in 26.9901 ms
+2023-12-07 16:01:03.819 -03:00 [INF] HTTP OPTIONS /api/LeaveTypes/{id} responded 204 in 0.0350 ms
+2023-12-07 16:01:03.824 -03:00 [INF] HTTP DELETE /api/LeaveTypes/{id} responded 400 in 1.7866 ms
+2023-12-07 16:01:10.936 -03:00 [INF] HTTP OPTIONS /api/LeaveTypes/{id} responded 204 in 0.1479 ms
+2023-12-07 16:01:10.943 -03:00 [INF] HTTP DELETE /api/LeaveTypes/{id} responded 400 in 0.5016 ms
+2023-12-07 16:02:48.069 -03:00 [INF] HTTP OPTIONS /api/LeaveTypes responded 204 in 0.7235 ms
+2023-12-07 16:02:48.075 -03:00 [INF] Leave types were retrieved sucessfully
+2023-12-07 16:02:48.076 -03:00 [INF] HTTP GET /api/LeaveTypes responded 200 in 2.1058 ms
+2023-12-07 16:02:50.231 -03:00 [INF] HTTP OPTIONS /api/LeaveTypes/2 responded 204 in 0.0493 ms
+2023-12-07 16:02:50.239 -03:00 [INF] HTTP GET /api/LeaveTypes/2 responded 200 in 2.0422 ms
+2023-12-07 16:02:51.394 -03:00 [INF] Leave types were retrieved sucessfully
+2023-12-07 16:02:51.401 -03:00 [INF] HTTP GET /api/LeaveTypes responded 200 in 9.0070 ms
+2023-12-07 16:02:52.703 -03:00 [INF] HTTP OPTIONS /api/LeaveTypes/3 responded 204 in 0.0437 ms
+2023-12-07 16:02:52.712 -03:00 [INF] HTTP GET /api/LeaveTypes/3 responded 200 in 2.6941 ms
+2023-12-07 16:02:53.888 -03:00 [INF] HTTP OPTIONS /api/LeaveTypes responded 204 in 0.0523 ms
+2023-12-07 16:02:53.894 -03:00 [INF] Leave types were retrieved sucessfully
+2023-12-07 16:02:53.896 -03:00 [INF] HTTP GET /api/LeaveTypes responded 200 in 3.1136 ms
+2023-12-07 16:02:54.954 -03:00 [INF] HTTP OPTIONS /api/LeaveTypes/4 responded 204 in 0.0456 ms
+2023-12-07 16:02:54.963 -03:00 [INF] HTTP GET /api/LeaveTypes/4 responded 200 in 1.1913 ms
+2023-12-07 16:02:56.015 -03:00 [INF] Leave types were retrieved sucessfully
+2023-12-07 16:02:56.017 -03:00 [INF] HTTP GET /api/LeaveTypes responded 200 in 3.7945 ms
+2023-12-07 16:02:56.898 -03:00 [INF] HTTP OPTIONS /api/LeaveTypes/5 responded 204 in 0.0456 ms
+2023-12-07 16:02:56.905 -03:00 [INF] HTTP GET /api/LeaveTypes/5 responded 200 in 1.4111 ms
+2023-12-07 16:02:58.018 -03:00 [INF] Leave types were retrieved sucessfully
+2023-12-07 16:02:58.022 -03:00 [INF] HTTP GET /api/LeaveTypes responded 200 in 6.7009 ms
+2023-12-07 16:03:01.337 -03:00 [INF] HTTP OPTIONS /api/LeaveTypes responded 204 in 0.0591 ms
+2023-12-07 16:03:01.344 -03:00 [INF] Leave types were retrieved sucessfully
+2023-12-07 16:03:01.347 -03:00 [INF] HTTP GET /api/LeaveTypes responded 200 in 4.6299 ms
+2023-12-07 16:03:03.400 -03:00 [INF] Leave types were retrieved sucessfully
+2023-12-07 16:03:03.402 -03:00 [INF] HTTP GET /api/LeaveTypes responded 200 in 4.1112 ms
+2023-12-07 16:03:09.959 -03:00 [INF] HTTP OPTIONS /api/LeaveTypes responded 204 in 0.1769 ms
+2023-12-07 16:03:09.968 -03:00 [INF] Leave types were retrieved sucessfully
+2023-12-07 16:03:09.970 -03:00 [INF] HTTP GET /api/LeaveTypes responded 200 in 3.2093 ms
+2023-12-07 16:03:27.007 -03:00 [INF] HTTP OPTIONS /api/LeaveTypes responded 204 in 0.0472 ms
+2023-12-07 16:03:27.016 -03:00 [INF] Leave types were retrieved sucessfully
+2023-12-07 16:03:27.018 -03:00 [INF] HTTP GET /api/LeaveTypes responded 200 in 3.3444 ms
+2023-12-07 16:03:42.241 -03:00 [INF] HTTP OPTIONS /api/LeaveTypes responded 204 in 0.0328 ms
+2023-12-07 16:03:42.250 -03:00 [INF] Leave types were retrieved sucessfully
+2023-12-07 16:03:42.252 -03:00 [INF] HTTP GET /api/LeaveTypes responded 200 in 4.5387 ms
+2023-12-07 16:03:46.221 -03:00 [INF] HTTP OPTIONS /api/LeaveTypes/1 responded 204 in 0.1194 ms
+2023-12-07 16:03:46.229 -03:00 [INF] HTTP GET /api/LeaveTypes/1 responded 200 in 1.1464 ms
+2023-12-07 16:03:54.415 -03:00 [INF] HTTP OPTIONS /api/LeaveTypes responded 204 in 0.0267 ms
+2023-12-07 16:03:54.424 -03:00 [INF] Leave types were retrieved sucessfully
+2023-12-07 16:03:54.427 -03:00 [INF] HTTP GET /api/LeaveTypes responded 200 in 5.8504 ms
+2023-12-07 16:07:19.448 -03:00 [INF] Now listening on: https://localhost:7228
+2023-12-07 16:07:19.746 -03:00 [INF] Now listening on: http://localhost:5093
+2023-12-07 16:07:20.215 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-07 16:07:20.218 -03:00 [INF] Hosting environment: Development
+2023-12-07 16:07:20.220 -03:00 [INF] Content root path: C:\Users\facundo.vega\source\repos\Windows Form Applicatio\HR.LeaveManagement.Clean\HR.LeaveManagament.Api
+2023-12-07 16:07:47.149 -03:00 [INF] HTTP OPTIONS /api/LeaveTypes responded 204 in 6.8767 ms
+2023-12-07 16:07:48.772 -03:00 [INF] Leave types were retrieved sucessfully
+2023-12-07 16:07:48.785 -03:00 [INF] HTTP GET /api/LeaveTypes responded 200 in 1617.8258 ms
+2023-12-07 16:07:51.071 -03:00 [INF] HTTP OPTIONS /api/LeaveTypes/2 responded 204 in 0.8789 ms
+2023-12-07 16:07:51.294 -03:00 [INF] HTTP GET /api/LeaveTypes/2 responded 200 in 216.5306 ms
+2023-12-07 16:07:52.698 -03:00 [INF] HTTP OPTIONS /api/LeaveTypes responded 204 in 0.0473 ms
+2023-12-07 16:07:52.739 -03:00 [INF] Leave types were retrieved sucessfully
+2023-12-07 16:07:52.740 -03:00 [INF] HTTP GET /api/LeaveTypes responded 200 in 35.7459 ms
+2023-12-07 16:07:54.551 -03:00 [INF] HTTP OPTIONS /api/LeaveAllocations responded 204 in 0.1427 ms
+2023-12-07 16:08:02.791 -03:00 [INF] HTTP POST /api/LeaveAllocations responded 201 in 8235.2065 ms
+2023-12-07 16:08:10.361 -03:00 [INF] HTTP OPTIONS /api/LeaveTypes/{id} responded 204 in 0.0874 ms
+2023-12-07 16:08:10.377 -03:00 [INF] HTTP DELETE /api/LeaveTypes/{id} responded 400 in 10.0831 ms
+2023-12-07 16:08:18.399 -03:00 [INF] HTTP OPTIONS /api/LeaveTypes/{id} responded 204 in 0.0646 ms
+2023-12-07 16:08:18.404 -03:00 [INF] HTTP DELETE /api/LeaveTypes/{id} responded 400 in 0.8475 ms
+2023-12-07 16:09:29.453 -03:00 [INF] Now listening on: https://localhost:7228
+2023-12-07 16:09:29.781 -03:00 [INF] Now listening on: http://localhost:5093
+2023-12-07 16:09:29.795 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-07 16:09:29.797 -03:00 [INF] Hosting environment: Development
+2023-12-07 16:09:29.799 -03:00 [INF] Content root path: C:\Users\facundo.vega\source\repos\Windows Form Applicatio\HR.LeaveManagement.Clean\HR.LeaveManagament.Api
+2023-12-07 16:09:49.753 -03:00 [INF] HTTP OPTIONS /api/LeaveTypes responded 204 in 5.3440 ms
+2023-12-07 16:09:51.451 -03:00 [INF] Leave types were retrieved sucessfully
+2023-12-07 16:09:51.462 -03:00 [INF] HTTP GET /api/LeaveTypes responded 200 in 1697.5454 ms
+2023-12-07 16:09:53.579 -03:00 [INF] HTTP OPTIONS /api/LeaveTypes/5 responded 204 in 0.6372 ms
+2023-12-07 16:09:53.956 -03:00 [INF] HTTP DELETE /api/LeaveTypes/5 responded 204 in 367.3667 ms
+2023-12-07 16:09:54.009 -03:00 [INF] Leave types were retrieved sucessfully
+2023-12-07 16:09:54.012 -03:00 [INF] HTTP GET /api/LeaveTypes responded 200 in 20.8213 ms
+2023-12-07 16:32:35.541 -03:00 [INF] Now listening on: https://localhost:7228
+2023-12-07 16:32:35.602 -03:00 [INF] Now listening on: http://localhost:5093
+2023-12-07 16:32:35.605 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-07 16:32:35.607 -03:00 [INF] Hosting environment: Development
+2023-12-07 16:32:35.609 -03:00 [INF] Content root path: C:\Users\facundo.vega\source\repos\Windows Form Applicatio\HR.LeaveManagement.Clean\HR.LeaveManagament.Api
+2023-12-07 16:34:29.165 -03:00 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 3.5466 ms
+2023-12-07 16:34:32.519 -03:00 [INF] HTTP POST /api/Auth/login responded 200 in 3336.8082 ms
+2023-12-07 16:34:34.731 -03:00 [INF] HTTP OPTIONS /api/LeaveTypes responded 204 in 0.8216 ms
+2023-12-07 16:34:35.180 -03:00 [INF] Leave types were retrieved sucessfully
+2023-12-07 16:34:35.186 -03:00 [INF] HTTP GET /api/LeaveTypes responded 200 in 443.2010 ms
+2023-12-07 16:34:35.825 -03:00 [INF] HTTP OPTIONS /api/LeaveRequest responded 204 in 0.2671 ms
+2023-12-07 16:34:36.071 -03:00 [INF] HTTP GET /api/LeaveRequest responded 200 in 238.8393 ms
+2023-12-07 16:34:38.267 -03:00 [INF] Leave types were retrieved sucessfully
+2023-12-07 16:34:38.269 -03:00 [INF] HTTP GET /api/LeaveTypes responded 200 in 10.1669 ms
+2023-12-07 16:34:58.954 -03:00 [INF] HTTP OPTIONS /api/LeaveRequest responded 204 in 0.1528 ms
+2023-12-07 16:34:58.987 -03:00 [INF] HTTP GET /api/LeaveRequest responded 200 in 13.2343 ms
+2023-12-07 16:35:19.066 -03:00 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 0.0708 ms
+2023-12-07 16:35:19.477 -03:00 [ERR] HTTP POST /api/Auth/login responded 500 in 405.9763 ms
+HR.LeaveManagement.Application.Exceptions.BadRequestException: Credentials for user@localhost.com aren't valid.
+   at HR.LeaveManagement.Identity.Services.AuthService.Login(AuthRequest request) in C:\Users\facundo.vega\source\repos\Windows Form Applicatio\HR.LeaveManagement.Clean\HR.LeaveManagement.Identity\Services\AuthService.cs:line 43
+   at HR.LeaveManagament.Api.Controllers.AuthController.Login(AuthRequest request) in C:\Users\facundo.vega\source\repos\Windows Form Applicatio\HR.LeaveManagement.Clean\HR.LeaveManagament.Api\Controllers\AuthController.cs:line 21
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2023-12-07 16:35:20.115 -03:00 [ERR] {"Errors":null,"Type":"BadRequestException","Title":"Credentials for user@localhost.com aren't valid.","Status":400,"Detail":null,"Instance":null,"Extensions":{}}
+2023-12-07 16:35:32.680 -03:00 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 0.0705 ms
+2023-12-07 16:35:32.817 -03:00 [INF] HTTP POST /api/Auth/login responded 200 in 132.4207 ms
+2023-12-07 16:35:34.243 -03:00 [INF] HTTP OPTIONS /api/LeaveTypes responded 204 in 0.0611 ms
+2023-12-07 16:35:34.257 -03:00 [INF] Leave types were retrieved sucessfully
+2023-12-07 16:35:34.259 -03:00 [INF] HTTP GET /api/LeaveTypes responded 200 in 9.1952 ms
+2023-12-07 16:35:34.990 -03:00 [INF] HTTP OPTIONS /api/LeaveRequest responded 204 in 0.0785 ms
+2023-12-07 16:35:35.003 -03:00 [INF] HTTP GET /api/LeaveRequest responded 200 in 6.6473 ms
+2023-12-07 16:35:35.020 -03:00 [INF] HTTP OPTIONS /api/LeaveAllocations responded 204 in 0.1389 ms
+2023-12-07 16:35:35.072 -03:00 [INF] HTTP GET /api/LeaveAllocations responded 200 in 46.4719 ms
+2023-12-07 16:35:37.121 -03:00 [INF] Leave types were retrieved sucessfully
+2023-12-07 16:35:37.125 -03:00 [INF] HTTP GET /api/LeaveTypes responded 200 in 6.2782 ms
+2023-12-07 16:35:38.660 -03:00 [INF] HTTP OPTIONS /api/LeaveTypes/1 responded 204 in 0.0531 ms
+2023-12-07 16:35:38.697 -03:00 [INF] HTTP GET /api/LeaveTypes/1 responded 200 in 22.8336 ms
+2023-12-07 16:35:39.890 -03:00 [INF] HTTP OPTIONS /api/LeaveTypes responded 204 in 0.2752 ms
+2023-12-07 16:35:39.899 -03:00 [INF] Leave types were retrieved sucessfully
+2023-12-07 16:35:39.902 -03:00 [INF] HTTP GET /api/LeaveTypes responded 200 in 5.5054 ms
